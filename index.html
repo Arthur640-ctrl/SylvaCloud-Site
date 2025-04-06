@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VertyCloud</title>
+    <link rel="stylesheet" href="index/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <h2 style="background: none; color: rgb(255, 255, 255); font-size: x-large;"><div class="back" onclick="window.location.href = '../index.html'">SylvaCloud</div></h2>
+        <nav class="navigation left">
+            <a href="workspace/workspace.html" id="my_space">Mon espace</a>
+            <a href="../plan/plan.html">Tarifs</a>   
+            <a href="/classe/classe.html">Classe numérique</a>                 
+            <a href="#">A propos</a>
+        </nav>
+        <nav class="navigation right" id="nav-right">
+            <a href="register-login/register-login.html">Se connecter</a>            
+            <a href="register-login/register-login.html">S'inscrire</a>
+        </nav>
+        <div class="account-type" id="account_type">
+            <i class="fa-solid fa-crown" style="color: yellow; background: none;" id="account_premium"></i>
+            <i class="fa-solid fa-graduation-cap" id="account_student" style="background: none; color: white;"></i>
+            <p style="background: none; color: white;" id="account_type_txt">Plan Gratuit</p>
+        </div>
+        <div class="menu-container">
+            <i class="fa-solid fa-circle-user account" id="account_circle"></i>
+            <ul class="dropdown-menu">
+                <li class="dropdown-menu-settings"><a href="../settings/settings.html">Parametres</a></li>
+                <li class="dropdown-menu-settings"><a href="#">Gerer</a></li>
+                <li class="dropdown-menu-logout" id="logout"><a href="#">Deconnexion</a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="responsive-header-container">
+            
+            <i class="fa-solid fa-bars"></i>
+            <ul class="responsive-dropdown-menu">
+                <li class=""><a href="../workspace/workspace.html">Mon espace</a></li>
+                <li class=""><a href="../plan/plan.html">Tarifs</a></li>
+                <li><a href="">Classe numérique</a></li>
+                <li class="" id="logout"><a href="#">A propos</a></li>
+                <li class="" id="logout"><a href="../register-login/register-login.html">Se connecter</a></li>
+                <li class="" id="logout"><a href="../register-login/register-login.html">S'inscrire</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-band">
+            <h1 style="background: none; color: white;">Le cloud éco-responsable et sécurisé pour tous</h1>
+            <p style="background: none; color: white;">Stockez, partagez et sauvegardez vos fichiers en toute sérénité avec une solution respectueuse de l’environnement</p>
+            <div class="main-band-button">
+                <div class="start-for-free">
+                    <button id="start-for-free-btn" class="start-for-free-btn">
+                        Commencer Gratuitement
+                        <i class="fa-solid fa-arrow-right start-for-free-btn-arrow"></i>
+                    </button>
+                    <p style="background: none;">Aucun payement n'est requis <i class="fa-solid fa-circle-question"></i></p>
+                </div>
+                <div class="choice-your-plan">
+                    <button class="choice-your-plan-btn" onclick="window.location.href = '../plan/plan.html'">
+                        Choisir un plan
+                        <i class="fa-solid fa-arrow-right choice-your-plan-btn-arrow"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="band-text-security-presentation">
+            <h1>Tout est mis en oeuvre pour la sécurité de vos donnés</h1>      
+            <div class="security-step">
+                <h2>1️⃣ • Un accès limité et surveillé</h2>
+                <p>🗝️ - Système de clefs pour un accès sécurisé et unique</p>
+                <p>🚪 - Middleware gérant la provenance et les intentions des requêtes</p>
+            </div> 
+            <div class="security-step">
+                <h2>2️⃣ • Stockez vos fichiers en toute tranquillité</h2>
+                <p>💾 - Vos données sont dupliquées 2 fois et autant que vous voulez sur les plans pour entreprises</p>
+                <p>📥 - Vos données sont sauvegardées sur des périphériques physiques différents</p>
+            </div>
+            <div class="security-step">
+                <h2>3️⃣ • Aucune exploitation de vos données personnelles</h2>
+                <p>👁️ - Nous ne regardons pas vos fichiers</p>
+                <p>💵 - Vos données ne sont pas revendues</p>
+            </div>
+            <p class="conclusion">Chez Verticloud, vos fichiers vous appartiennent et restent protégés, toujours. 🚀🔒🌿</p>
+        </div>
+        
+        <div class="band-text-ecology-presentation">
+            <h1 style="background: none;">Notre Engagement Écologique 🌱</h1>
+            <div class="band-text-ecology-presentation-element" style="background: none;">
+                
+                <div class="ecology-step">
+                    <div class="text-zone">
+                        <h2 style="background: none;">Materiel recyclés</h2>
+                        <p style="background: none;">Tous nos serveurs proviennent de machines de seconde main, soigneusement recyclées. Nous récupérons des composants issus d'ordinateurs obsolètes, cassés ou inutilisés, que nous réparons et remettons à neuf avant de les intégrer dans notre infrastructure. Cette approche permet non seulement de réduire l'empreinte écologique en prolongeant la durée de vie de ces équipements, mais aussi de contribuer à une gestion plus responsable des ressources technologiques tout en garantissant des performances fiables et efficaces.</p>
+                    </div>
+                    <div class="img-zone">
+                        <img src="beautiful-scenery-river-surrounded-by-greenery-forest.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ecology-step">
+                    <div class="text-zone">
+                        <h2 style="background: none;">Faible consommation</h2>
+                        <p style="background: none;">Notre infrastructure est spécialement conçue pour gérer des tâches lourdes tout en optimisant la consommation de ressources. En effet, nous mettons un point d'honneur à maximiser l'efficacité énergétique de nos systèmes sans compromettre la qualité du service et la puissance de traitement. Notre objectif est de garantir des performances élevées tout en minimisant l'impact environnemental, en veillant à ce que chaque ressource soit utilisée de manière optimale pour un équilibre parfait entre économie et performance.</p>
+                    </div>
+                    <div class="img-zone">
+                        <img src="beautiful-scenery-river-surrounded-by-greenery-forest.jpg" alt="">
+                    </div>
+                </div>
+            
+            
+                
+                <div class="ecology-step">
+                    <div class="text-zone">
+                        <h2 style="background: none;">Reduction des dechets</h2>
+                        <p style="background: none;">Nous nous engageons à réduire les déchets électroniques en adoptant des pratiques responsable. En prolongeant la durée de vie des appareils informatiques grâce à leur réparation et leur réutilisation, nous limitons la production de nouveaux déchets. Nos serveurs sont issus de machines recyclées, ce qui permet de détourner des équipements potentiellement jetés vers des solutions durables et efficaces. De plus, nous privilégions les partenaires et fournisseurs qui partagent notre vision de la gestion responsable des ressources et du recyclage. En adoptant ces stratégies, nous contribuons à la réduction de l'empreinte écologique tout en soutenant l'économie circulaire et la lutte contre la surproduction de déchets électroniques.</p>
+                    </div>
+                    <div class="img-zone">
+                        <img src="beautiful-scenery-river-surrounded-by-greenery-forest.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ecology-step">
+                    <div class="text-zone">
+                        <h2 style="background: none;">Gaz à effets de serre</h2>
+                        <p style="background: none;">"Notre infrastructure génère des émissions de gaz à effet de serre en raison de la consommation d’énergie nécessaire au fonctionnement de nos serveurs et à leur refroidissement. Nous mettons en œuvre des mesures pour le réduire. Nous nous engageons à optimiser l'efficacité énergétique de nos équipements, en adoptant de nouvelles technologies. De plus, nous explorons des solutions d’alimentation en énergie renouvelable afin de limiter notre dépendance aux énergies fossiles et de réduire notre empreinte carbone.</p>
+                    </div>
+                    <div class="img-zone">
+                        <img src="beautiful-scenery-river-surrounded-by-greenery-forest.jpg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    <script src="index/script.js"></script>
+</body>
+</html>

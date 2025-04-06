@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes Numerique</title>
+    <link rel="stylesheet" href="classe.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 style="background: none; color: rgb(0, 0, 0); font-size: x-large;"><div class="back" onclick="window.location.href = '../index.html'">SylvaCloud</div></h2>
+        <nav class="navigation left">
+            <a href="workspace/workspace.html" id="my_space">Mon espace</a>
+            <a href="../plan/plan.html">Tarifs</a>   
+            <a href="">Classe numérique</a>                 
+            <a href="#">A propos</a>
+        </nav>
+        <nav class="navigation right" id="nav-right">
+            <a href="register-login/register-login.html">Se connecter</a>            
+            <a href="register-login/register-login.html">S'inscrire</a>
+        </nav>
+        <div class="account-type" id="account_type">
+            <i class="fa-solid fa-crown" style="color: yellow; background: none;" id="account_premium"></i>
+            <i class="fa-solid fa-graduation-cap" id="account_student" style="background: none; color: white;"></i>
+            <p style="background: none; color: white;" id="account_type_txt">Plan Gratuit</p>
+        </div>
+        <div class="menu-container">
+            <i class="fa-solid fa-circle-user account" id="account_circle"></i>
+            <ul class="dropdown-menu">
+                <li class="dropdown-menu-settings"><a href="../settings/settings.html">Parametres</a></li>
+                <li class="dropdown-menu-settings"><a href="#">Gerer</a></li>
+                <li class="dropdown-menu-logout" id="logout"><a href="#">Deconnexion</a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="responsive-header-container">
+            
+            <i class="fa-solid fa-bars"></i>
+            <ul class="responsive-dropdown-menu">
+                <li class=""><a href="../workspace/workspace.html">Mon espace</a></li>
+                <li class=""><a href="../plan/plan.html">Tarifs</a></li>
+                <li><a href="">Classe numérique</a></li>
+                <li class="" id="logout"><a href="#">A propos</a></li>
+                <li class="" id="logout"><a href="../register-login/register-login.html">Se connecter</a></li>
+                <li class="" id="logout"><a href="../register-login/register-login.html">S'inscrire</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <span class="hero-header">SylvaCloud pour les écoles</span>
+                <span class="hero-title">ClasseBox, une plateforme de stockage éco-responsable pensée pour votre classe</span>
+                <span class="hero-description">Simplifiez les échanges entre élèves et enseignants grâce à un espace sécurisé, collaboratif et écologique. Sans avoir a courir partout !</span>
+                <button class="hero-start-button">
+                    Commencer
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button class="hero-login-button">
+                    Je suis un élève
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="hero-image">
+                <img src="/Images/6847163.jpg" alt="">
+            </div>
+        </div>
+        <div class="short-presentation">
+            <h2 class="short-presentation-title">📚 Des outils simples pour une classe connectée</h2>
+            <div class="short-presentation-band">
+                <div class="short-presentation-band-item">
+                    <img src="/Images/9829626.jpg" alt="">
+                    <span class="short-presentation-band-item-title">Espace professeur</span>
+                    <span class="short-presentation-band-item-text">Partage de cours, devoirs à rendre, suivi des élèves...</span>
+                </div>
+                <div class="short-presentation-band-item">
+                    <img src="/Images/3967408.jpg" alt="">
+                    <span class="short-presentation-band-item-title">Espace élève</span>
+                    <span class="short-presentation-band-item-text">Dépôt de fichiers, collaboration, accès aux documents...</span>
+                </div>
+                <div class="short-presentation-band-item">
+                    <img src="/Images/security-4868172.jpg" alt="">
+                    <span class="short-presentation-band-item-title">Code de classe</span>
+                    <span class="short-presentation-band-item-text">Chaque élève rejoint facilement sa classe avec un code unique.</span>
+                </div>
+                <div class="short-presentation-band-item">
+                    <img src="/Images/green-bulb-1440675_1920.jpg" alt="">
+                    <span class="short-presentation-band-item-title">Cloud éco-conçu</span>
+                    <span class="short-presentation-band-item-text">Stockage optimisé pour limiter l’impact environnemental.</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="classe.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="register-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../index.html">
+                <i class="fa-solid fa-reply"></i>
+                Retour
+            </a>
+            <a href="">
+                <i class="fa-solid fa-circle-info"></i>
+                Infos
+            </a>
+        </div>
+        <div class="register-login">
+            <div class="login">
+                <h1>J'ai un compte</h1>
+                <div class="login-email">
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </span>
+                    <div>
+                        <input type="email" class="login-email-input input" placeholder="Entrer votre email" id="login_email">
+                    </div>
+                </div>
+                <div class="login-mdp">
+                    <span>
+                        <i class="fa-solid fa-lock"></i>
+                        Mot de passe
+                    </span>
+                    <div>
+                        <input type="password" class="login-password-input input" placeholder="Entrer votre mot de passe" id="login_password">
+                    </div>
+                </div>
+                <div class="login-btn-div">
+                    <button class="login-btn" id="login_btn">Me connecter</button>
+                </div>
+                
+                <div class="login-error" id="login_error">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <p id="login_error_txt">Mot de passe incorecte</p>
+                </div>
+            </div>
+            <div class="register">
+                <h1>Je n'ai pas de compte</h1>
+                <div class="register-email">
+                    <span>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </span>
+                    <div>
+                        <input type="email" class="register-email-input input" placeholder="Entrer votre email" id="register_email">
+                    </div>
+                </div>
+                <div class="register-mdp">
+                    <span>
+                        <i class="fa-solid fa-lock"></i>
+                        Mot de passe
+                    </span>
+                    <div>
+                        <input type="password" class="register-password-input input" placeholder="Entrer un mot de passe" id="register_password">
+                    </div>
+                </div>
+                <div class="register-mdp">
+                    <span>
+                        <i class="fa-solid fa-lock"></i>
+                        Confirmer
+                    </span>
+                    <div>
+                        <input type="password" class="register-confirm-input input" placeholder="Confirmer" id="register_password_confirm">
+                    </div>
+                </div>
+                <div class="register-usage">
+                    <span>
+                        <i class="fa-solid fa-user"></i>
+                        Pour quel usage
+                    </span>
+                    <div class="register-usage-select">
+                        <div class="select">
+                            <input type="radio" name="usage" id="radio_personnel">
+                            <label for="radio_personnel" style="background: none; color: white;">Personnel</label>
+                        </div>
+                        <div class="select">
+                            <input type="radio" name="usage" id="radio_professionnel">
+                            <label for="radio_professionnel" style="background: none; color: #ffffff;">Professionnel</label>
+                            <div id="token_input_container" style="display: none;">
+                                <input type="text" class="input" placeholder="Entrer le token de compte">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="register-btn-div">
+                    <button class="register-btn" id="register_btn">M'inscrire</button>
+                </div>
+                
+                <div class="register-error" id="register_error">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <p id="register_error_txt">Mot de passe incorecte</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="register.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

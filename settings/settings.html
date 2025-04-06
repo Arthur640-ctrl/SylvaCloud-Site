@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="navigation">
+        <div>
+            <a href="" class="main-nav">Paramètres du compte</a>
+            <div class="sous-nav">
+                <a href="">Profil Utilisateur</a>
+                <a href="">Langue</a>
+                <a href="">Notifications</a>
+            </div>
+            <a href="" class="main-nav">Sécurité</a>
+            <div class="sous-nav">
+                <a href="">Authentification à deux facteurs (2FA)</a>
+                <a href="">Historique des connexions</a>
+                <a href="">Connexions</a>
+            </div>
+            <a href="" class="main-nav">Stockage</a>
+            <div class="sous-nav">
+                <a href="">Espace utilisé vs. disponible</a>
+                <a href="">Mon plan</a>
+                <a href="">Vider</a>
+            </div>
+        </div>
+    </div>
+    <div class="all-setings">
+        <div class="categorie">
+            <h1>Paramètres du compte</h1>
+            <div class="sous-categorie">
+                <h2>Profil utilisateur :</h2>
+                <div class="setting profil-user-set">
+                    <div class="cat">
+                        <span>Prénom :</span>
+                        <span>Nom :</span>
+                        <span>Email : </span>
+                    </div>
+                    <div class="value">
+                        <input type="text" class="input" placeholder="Entrez un prénom" id="value_family_name">
+                        <input type="text" class="input" placeholder="Entrez un nom" id="value_name">
+                        <span id="value_email">test@test.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-categorie">
+                <h2>Langue :</h2>
+                <div class="setting">
+                    <span class="indisponible-setting">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        Indisponible
+                    </span>
+                </div>
+            </div>
+            <div class="sous-categorie">
+                <h2>Notifications : <span class="indisponible-setting"><i class="fa-solid fa-triangle-exclamation"></i> Indisponible</span></h2>
+                <div class="setting notification-set">
+                    <div class="cat">
+                        <span>Notifications par email : </span>
+                        <span>Notifications d'informations :</span>
+                        <span>Notifications de maintenance : </span>
+                        <span>Notifications d'activité suspecte :</span>
+                    </div>
+                    <div class="value">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                        <input type="checkbox">
+                    </div>
+                </div>
+            </div>
+            <div class="sous-categorie">
+                <h2>Autres :</h2>
+                <div class="setting notification-set">
+                    <div class="cat">
+                        <span>Mon ID : </span>
+                    </div>
+                    <div class="value">
+                        <span id="value_accountid">egugfusgGUFdrgd7776R-èçF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categorie">
+            <h1>Sécurité</h1>
+            <div class="sous-categorie">
+                <h2>Authentification à deux facteurs (2FA) : <span class="indisponible-setting"><i class="fa-solid fa-triangle-exclamation"></i> Indisponible</span></h2>
+                <div class="setting adf">
+                    <div class="cat">
+                        <span>Authentification à deux facteurs :</span>
+                        <span>Si activé à l'email :</span>
+                    </div>
+                    <div class="value">
+                        <input type="checkbox" placeholder="Oui">
+                        <span>test2@test.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sous-categorie">
+                <h2>Historique de connexions <span class="indisponible-setting"><i class="fa-solid fa-triangle-exclamation"></i> Indisponible</span></h2>
+                <div class="setting">
+                    <a href="">Acceder</a>
+                </div>
+            </div>
+            <div class="sous-categorie">
+                <h2>Connexions et échange avec l'API <span class="indisponible-setting"><i class="fa-solid fa-triangle-exclamation"></i> Indisponible</span></h2>
+                <div class="setting-connexions">
+                    <div class="cat cat-connexions-set">
+                        <span>Me déconnecter</span>
+                        <span>Ne jamais changer mon token : <span class="not-recommander">Non recommandé</span></span>
+                        <span>Token personnalisé : <span class="not-recommander">Non recommandé</span></span>
+                    </div>
+                    <div class="value value-connexions-set">
+                        <button class="logout-all-acout">Me déconner de tout les comptes</button>
+                        <input type="checkbox">
+                        <input type="text" class="input" placeholder="Entrer le token ici">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="settings.js"></script>
+</body>
+</html>

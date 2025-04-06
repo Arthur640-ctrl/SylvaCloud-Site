@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage</title>
+    <link rel="stylesheet" href="space.css">
+    <link rel="stylesheet" href="/admin/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Admin</h1>
+        <nav class="navigation">
+            <a href="/admin/admin.html">Home</a>            
+            <a href="/admin/user/user.html">Users</a>
+            <a href="">Space</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="disks-list">
+            <div>
+                <h2>All disks :</h2>
+                <input type="text" placeholder="Search disk" id="search">
+            </div>
+            <div class="disks-list-list" id="disks_list">
+                <div class="disk">
+                    <div class="disk-info">
+                        <h4>disk1</h4>
+                        <p>Server : "FirstServer"</p>
+                        <p>Size : 1000GB</p>
+                        <p>Used : 500GB</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="disks-info">
+            <div>
+                <h2>Disk info :</h2>
+                <h4 id="disk_name">Disk name :</h4>
+                <h4>Disk location :</h4>
+                <h4>Disk server : Not Specified</h4>
+                <div class="info_disk_scroll">
+                    <h2 class="titles-disks-info">Virtual Space :</h2>
+                    <div class="stats_space">
+                        <canvas id="virtual_space" class="chart"></canvas>
+                    </div>
+                    <h2 class="titles-disks-info">Reel Space :</h2>
+                    <div class="stats_space">
+                        <canvas id="reel_space" class="chart"></canvas>
+                    </div>
+                    <h2 class="titles-disks-info">Performances :</h2>
+                    <div class="stats_space">
+                        <canvas id="performance-stats" class="chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="disks-actions-stats-logs">
+            <div class="disks-actions">
+                <h2></h2>
+            </div>
+            <div class="disks-stats">
+                4
+            </div>
+            <div class="disks-content">
+                <h2>Disk Content :</h2>
+                <input type="text" placeholder="Search folder" id="search">
+                <div class="content-of-the-disk">
+                    <div class="icon" id="icon">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="value" id="value">
+                        <span>TeuguirghsdihrgiugI788ggih_H0Y</span>
+                        <span>config.json</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="../check.js"></script>
+    <script src="space.js"></script>
+
+</body>
+</html>

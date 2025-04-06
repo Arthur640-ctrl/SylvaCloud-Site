@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="/admin/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Admin</h1>
+        <nav class="navigation">
+            <a href="/admin/admin.html">Home</a>            
+            <a href="">Users</a>
+            <a href="/admin/space/space.html">Space</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="user-list">
+            <div class="user-list-header">
+                <h2>User list :</h2>
+                <p>You need to refresh the page for have new infos</p>
+                <input type="text" id="search" placeholder="Search user">
+            </div>
+            <div class="user-list-list" id="user_list">
+                <div class="user">
+                    <div class="user-list-user-infos">
+                        <h4>seyfysyFYUDdyd767YV765uvucf65</h4>
+                        <p>test@test.com</p>
+                    </div>
+                    <div class="user-list-user-action">
+                        <button><i class="fa-solid fa-eye"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-info">
+            <h2>User infos :</h2>
+            <p id="title_info">Accout id : efsuhrghdh</p>
+            <h3>General Infos :</h3>
+            <div class="user-infos">
+                <div class="infos">
+                    <span>Id :</span>
+                    <span>Email :</span>
+                    <span>Name :</span>
+                    <span>Family name :</span>
+                </div>
+                <div class="values">
+                    <span id="info_id"></span>
+                    <span id="info_email"></span>
+                    <span id="info_name"></span>
+                    <span id="info_fname"></span>
+                </div>
+            </div>
+            <h3>Account usage :</h3>
+            <div class="user-infos">
+                <div class="infos">
+                    <span>Plan :</span>
+                    <span>Usage :</span>
+                    <span>Space total :</span>
+                    <span>Space used :</span>
+                </div>
+                <div class="values">
+                    <span id="info_plan"></span>
+                    <span id="info_usage"></span>
+                    <span id="info_totalspace"></span>
+                    <span id="info_usedspace">Unavailable</span>
+                </div>
+            </div>
+            <h3>Locations infos :</h3>
+            <div class="user-infos">
+                <div class="infos">
+                    <span>Main | Folder :</span>
+                    <span>Main | Disk :</span>
+                    <span>Backup | Folder :</span>
+                    <span>Backup | Disk :</span>
+                </div>
+                <div class="values">
+                    <span id="info_mfolder"></span>
+                    <span id="info_mdisk"></span>
+                    <span id="info_bfolder"></span>
+                    <span id="info_bdisk"></span>
+                </div>
+            </div>
+            <h3>Security infos :</h3>
+            <div class="user-infos">
+                <div class="infos">
+                    <span>Token :</span>
+                    <span>Hashed Password :</span>
+                    <span>Last Ip :</span>
+                </div>
+                <div class="values">
+                    <span id="info_token"></span>
+                    <span id="info_hash"></span>
+                    <span id="info_lstip"></span>
+                </div>
+            </div>
+            <h3>Last connection infos :</h3>
+            <div class="user-infos">
+                <div class="infos">
+                    <span>Ip :</span>
+                    <span>Country :</span>
+                    <span>City :</span>
+                    <span>Region :</span>
+                    <span>Latitude :</span>
+                    <span>Longitude :</span>
+                    <span>Internet Provider :</span>
+                </div>
+                <div class="values">
+                    <span id="info_ip"></span>
+                    <span id="info_country"></span>
+                    <span id="info_city"></span>
+                    <span id="info_region"></span>
+                    <span id="info_lat"></span>
+                    <span id="info_lon"></span>
+                    <span id="info_isp"></span>
+                </div>
+            </div>
+            <h3>All connections :</h3>
+            <div class="user-infos">
+                <div class="infos">
+                    <span>Indisponible</span>
+                </div>
+                <div class="values">
+                    <span>Indisponible</span>
+                </div>
+            </div>
+        </div>
+        <div class="user-other">
+            <div class="user-actions">
+                <div class="user-select">
+                    <h2>User action :</h2>
+                    <div class="user-actions-btn">
+                        <button class="red-user-action-button" id="delete_account">Delete</button>
+                        <button class="red-user-action-button" onclick="alert('Indisponible')">Ban</button>
+                        <button class="red-user-action-button" onclick="alert('Indisponible')">Temp Ban</button>
+                        <button class="red-user-action-button" onclick="alert('Indisponible')">Ban ip</button>
+                        <button class="default-user-action-button" onclick="alert('Indisponible')">Empty token</button>
+                        <button class="default-user-action-button" onclick="alert('Indisponible')">Set to default settings</button>
+                    </div>
+                </div>
+            </div>
+            <div class="user-stats">
+                <div>
+                    <h2>Users stats :</h2>
+                    <div class="stats">
+                        <div class="user-stats-icons">
+                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                        <div class="user-stats-infos">
+                            <span>All accounts</span>
+                            <span>Active token</span>
+    
+                        </div>
+                        <div class="user-stats-values">
+                            <span id="stat_allacount">120</span>
+                            <span id="stat_activetoken">20</span>
+                        </div>
+                    </div>
+                    
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script src="/admin/check.js"></script>
+    <script src="user.js"></script>
+    
+</body>
+</html>

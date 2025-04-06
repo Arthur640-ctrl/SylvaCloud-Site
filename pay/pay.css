@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+* {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;    
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.input {
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.input::placeholder {
+    color: black;
+    text-align: center;
+}
+
+.input:focus, .input:active {
+    outline: none;
+    user-select: none; /* Empêche la sélection */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.container {
+    background-color: #558f4f;
+    width: 30%;
+    height: auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+.method {
+    margin-top: 20px;
+    background: none;
+    color: white;
+    display: flex;
+}
+
+.with-code {
+    margin-right: 10px;
+}
+
+.method-option {
+    background: none;
+}
+
+.method-option input {
+    background: none;
+}
+
+.method-option span {
+    background: none;
+    color: white;
+}
+
+.option-without-code {
+    background: none;
+    margin-top: 20px;
+}
+
+.option-without-code h3 i {
+    background: none;
+    color: red;
+}
+
+.option-without-code h3 {
+    color: red;
+    background: none;
+}
+
+.option-code {
+    padding: 10px;
+    background: none;
+}
+
+.command {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.command:hover {
+    background-color: #558f4f;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.command i {
+    background: none;
+    color: black;
+    transition: .5s;
+}
+
+.command:hover i{
+    color: white;
+}
+
+.error {
+    display: flex;
+}

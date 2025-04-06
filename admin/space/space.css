@@ -1,0 +1,211 @@
+.container {
+    background: none;
+    width: 100%;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.disks-list {
+    width: 15%;
+    height: 95%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.disks-info {
+    width: 50%;
+    height: 95%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+}
+
+.disks-actions-stats-logs {
+    width: 30%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Répartit les éléments en haut et en bas */
+}
+
+
+.disks-actions {
+    width: 100%;
+    height: 20%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 0);
+}
+
+.disks-stats {
+    width: 100%;
+    height: 30%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 255);
+}
+
+.disks-content {
+    width: 100%;
+    height: 45%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 0);
+}
+
+/* Disk list */
+
+.disks-list div {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disks-list div h2 {
+    text-align: center;
+}
+
+#search {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#search::placeholder {
+    color: #ffffff;
+}
+
+.disk {
+    margin: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 90%;
+    cursor: pointer;
+    transition: .3s;
+}  
+
+.disk:hover {
+    background: white;
+    color: black;
+}  
+
+.disk-info {
+    background: none;
+}
+
+.disk-info h4 {
+    background: none;
+    transition: .5s;
+}
+
+.disk:hover .disk-info h4 {
+    color: black;
+}
+
+.disk-info p {
+    background: none;
+    transition: .3s;
+}
+
+.disk:hover .disk-info p {
+    color: black;
+}
+
+/* Disk infos */
+
+.disks-info{
+    background: none;
+}
+
+.disks-info div {
+    margin: 5px;
+    text-align: center;
+}
+
+.disks-info div h2 {
+    margin-bottom: 10px;
+}
+
+.stats_virtual_space {
+    margin-top: 20px;
+}
+
+.stats_space {
+    width: 100%;
+    display: flex;
+    flex-direction: row; /* Placer les graphiques l'un sous l'autre */
+    height: 300px; /* Hauteur totale pour les deux graphiques */
+    justify-content: center; /* Espacement égal entre les graphiques */
+}
+
+.chart {
+    width: 100%; /* Utilise toute la largeur du conteneur */
+    height: 45%; /* Chaque graphique prendra 45% de la hauteur du conteneur */
+}
+
+.titles-disks-info {
+    margin-top: 30px;
+}
+
+.info_disk_scroll {
+    height: auto;
+    max-height: 1000px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    width: 100%;
+}
+
+/* Disk content */
+
+.disks-content {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon, .value {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-of-the-disk {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: auto;
+    max-height: 450px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.icon i {
+    margin: 5px;
+}
+
+.value span {
+    margin-bottom: 6px;
+}

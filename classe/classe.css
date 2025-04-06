@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+* {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;    
+    color: black;
+
+}
+
+.back {
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    margin-top: 72px;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-header {
+    color: rgb(44, 44, 44);
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+    margin-right: 200px;
+}
+
+.hero-text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.hero-image img {
+    width: 1100px;        /* largeur fixe */
+    height: auto;        /* conserve les proportions */
+    object-fit: cover;   /* ajuste le rendu sans déformer */
+    border-radius: 12px;
+}
+
+.hero-description {
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.hero-start-button {
+    background-color: #73A86E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: ease-out 0.5s;
+    margin-bottom: 20px;
+}
+
+.hero-start-button i {
+    color: white;
+    background: none;
+    transition: ease-out 0.5s;
+    margin-left: 5px;
+}
+
+.hero-start-button:hover {
+    background-color: #5A8B5A;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hero-start-button:hover i {
+    transform: translateX(+5px);
+}
+
+.hero-login-button {
+    background: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 50%;
+    transition: ease-out 0.5s;
+}
+
+.hero-login-button i {
+    color: black;
+    background: none;
+    transition: ease-out 0.5s;
+    margin-left: 5px;
+}
+
+.hero-login-button:hover {
+    color: #5A8B5A;
+}
+
+.hero-login-button:hover i {
+    transform: translateX(+5px);
+    color: #5A8B5A;
+}
+
+/* Short Presentation */
+
+.short-presentation {
+    width: 100%;
+    height: auto;
+    background-color: #73A86E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.short-presentation-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    background: none;
+}
+
+.short-presentation-band {
+    width: 80%;
+    background: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.short-presentation-band-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.short-presentation-band-item span {
+    text-align: center;
+}
+
+.short-presentation-band-item img {
+    width: 100%;
+    height: 370px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;  /* L'image couvre tout l'espace sans se déformer */
+}
+
+.short-presentation-band-item-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+}
+
+.short-presentation-band-item-text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    text-align: center;
+    background: none;
+    margin-bottom: 10px;
+}
+
+.short-presentation-band-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}

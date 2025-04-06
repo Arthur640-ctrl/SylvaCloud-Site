@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans</title>
+    <link rel="stylesheet" href="plan.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h2 style="background: none; color: rgb(0, 0, 0); font-size: x-large;"><div class="back" onclick="window.location.href = '../index.html'">SylvaCloud</div></h2>
+        <nav class="navigation left">
+            <a href="/workspace/workspace.html" id="my_space">Mon espace</a>
+            <a href="/plan/plan.html">Tarifs</a>
+            <a href="/classe/classe.html">Classe numérique</a>                    
+            <a href="#">A propos</a>
+        </nav>
+        <nav class="navigation right" id="nav-right">
+            <a href="/register-login/register-login.html">Se connecter</a>            
+            <a href="/register-login/register-login.html">S'inscrire</a>
+        </nav>
+        <div class="account-type" id="account_type">
+            <i class="fa-solid fa-crown" style="color: rgb(0, 0, 0); background: none;" id="account_premium"></i>
+            <i class="fa-solid fa-graduation-cap" id="account_student"></i>
+            <p style="background: none; color: rgb(0, 0, 0);" id="account_type_txt">Plan Gratuit</p>
+        </div>
+        <div class="menu-container">
+            <i class="fa-solid fa-circle-user account" id="account_circle"></i>
+            <ul class="dropdown-menu">
+                <li class="dropdown-menu-settings"><a href="/settings/settings.html">Parametres</a></li>
+                <li class="dropdown-menu-settings"><a href="#">Gerer</a></li>
+                <li class="dropdown-menu-logout" id="logout"><a href="#">Deconnexion</a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="responsive-header-container">
+            
+            <i class="fa-solid fa-bars"></i>
+            <ul class="responsive-dropdown-menu">
+                <li><a href="../index.html">Acceuil</a></li>
+                <li class=""><a href="/workspace/workspace.html">Mon espace</a></li>
+                <li class=""><a href="../plan/plan.html">Tarifs</a></li>
+                <li><a href="">Classe numérique</a></li>
+                <li class="" id="logout"><a href="#">A propos</a></li>
+                <li class="" id="logout"><a href="/register-login/register-login.html">Se connecter</a></li>
+                <li class="" id="logout"><a href="/register-login/register-login.html">S'inscrire</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="titles">
+            <h1>Le cloud éco-responsable</h1>
+            <span>Avec SylvaCloud, stockez sans vous souciez de la sécurité</span>
+        </div>
+        <div class="all-plans">
+            <div class="plan free-plan">
+                <h3>Pour essayer</h3>
+                <span class="plan-name">Gratuit</span>
+                <span class="plan-price">Gratuit à vie</span>
+                <span class="plan-price-go">Soit 0€ le Go</span>
+                <button id="btn_free">
+                    <i class="fa-solid fa-circle-exclamation" id="free_not_avaible"></i>
+                    <i class="fa-solid fa-rocket" id="free_go_workspace"></i>
+                    <span id="btn_free_txt">Aller à mon espace</span>
+                </button>
+                <div class="plan-info-indisponible infosupp" id="dispo_free">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Indisponible
+                </div>
+                <div class="plan-error-best infosupp" style="display: none;">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Meilleur rapport qualité/prix
+                </div>
+                <div class="plan-info-bestseller infosupp" id="bestseller_free">
+                    <i class="fa-solid fa-star"></i>
+                    Meilleur vente
+                </div>
+                <div class="plan-fonctionnalite">
+                    <div class="plan-fonctionnalite-icon">
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <div class="plan-fonctionnalite-fonct">
+                        <span>15 Go d'espace disque</span>
+                        <span>Partage Standard</span>
+                        <span>Synchronisation simple</span>
+                    </div>
+                </div>
+                <a href="" class="show-all-fonc">Voir toutes les fonctionnalités</a>
+
+            </div>
+            <div class="plan essential-plan">
+                <h3>Pour un usage personnel</h3>
+                <span class="plan-name">Essentiel</span>
+                <span class="plan-price">1,29€/mois</span>
+                <span class="plan-price-go">Soit 0.02€ le Go</span>
+                <button id="btn_essential">
+                    <i class="fa-solid fa-circle-exclamation" id="essential_not_avaible"></i>
+                    <i class="fa-solid fa-rocket" id="essential_go_workspace"></i>
+                    <i class="fa-solid fa-cart-shopping" id="essential_pay"></i>
+                    <span id="btn_essential_txt">Acheter</span>
+                </button>
+                <div class="plan-info-indisponible infosupp" id="dispo_essential">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Indisponible
+                </div>
+                <div class="plan-error-best infosupp" style="display: none;">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Meilleur rapport qualité/prix
+                </div>
+                <div class="plan-info-bestseller infosupp" id="bestseller_essential">
+                    <i class="fa-solid fa-star"></i>
+                    Meilleur vente
+                </div>
+                <div class="plan-fonctionnalite">
+                    <div class="plan-fonctionnalite-icon">
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <div class="plan-fonctionnalite-fonct">
+                        <span>50 Go d'espace disque</span>
+                        <span>Support prioritaire</span>
+                        <span>Synchronisation multi-appareils</span>
+                        <span>Partage avec gestion des permissions</span>
+                        <span>FTP</span>
+                    </div>
+                </div>
+                <a href="" class="show-all-fonc">Voir toutes les fonctionnalités</a>
+
+            </div>
+            <div class="plan pro-plan">
+                <h3>Pour un usage proffesionnel</h3>
+                <span class="plan-name">Pro</span>
+                <span class="plan-price">3,99€/mois</span>
+                <span class="plan-price-go">Soit 0.01€ le Go</span>
+                <button id="btn_pro">
+                    <i class="fa-solid fa-circle-exclamation" id="pro_not_avaible"></i>
+                    <i class="fa-solid fa-rocket" id="pro_go_workspace"></i>
+                    <i class="fa-solid fa-cart-shopping" id="pro_pay"></i>
+                    <span id="btn_pro_txt">Acheter</span>
+                </button>
+                <div class="plan-info-indisponible infosupp" id="dispo_pro">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Indisponible
+                </div>
+                <div class="plan-error-best infosupp" style="display: none;">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Meilleur rapport qualité/prix
+                </div>
+                <div class="plan-info-bestseller infosupp" id="bestseller_pro">
+                    <i class="fa-solid fa-star"></i>
+                    Meilleur vente
+                </div>
+                <div class="plan-fonctionnalite">
+                    <div class="plan-fonctionnalite-icon">
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <div class="plan-fonctionnalite-fonct">
+                        <span>200 Go d'espace disque</span>
+                        <span>Support prioritaire</span>
+                        <span>Synchronisation avancée avec versionning</span>
+                        <span>Chiffrement de bout en bout</span>
+                        <span>FTP</span>
+                        <span>Systeme complet de permissions</span>
+                    </div>
+                </div>
+                <a href="" class="show-all-fonc">Voir toutes les fonctionnalités</a>
+
+            </div>
+            <div class="plan entreprise-plan">
+                <h3>Pour les entreprises</h3>
+                <span class="plan-name">Entreprise</span>
+                <span class="plan-price">Contactez-nous</span>
+                <span class="plan-price-go">En fonction du stockage</span>
+                <button id="btn_entreprise">
+                    <i class="fa-solid fa-message"></i>
+                    Nous contacter
+                </button>
+                <div class="plan-info-indisponible infosupp" id="dispo_entreprise">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Indisponible
+                </div>
+                <div class="plan-error-best infosupp" style="display: none;">
+                    <i class="fa-solid fa-money-bill"></i>
+                    Meilleur rapport qualité/prix
+                </div>
+                <div class="plan-info-bestseller infosupp" id="bestseller_entreprise">
+                    <i class="fa-solid fa-star"></i>
+                    Meilleur vente
+                </div>
+                <div class="plan-fonctionnalite">
+                    <div class="plan-fonctionnalite-icon">
+                        <i class="fa-solid fa-database"></i>
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <div class="plan-fonctionnalite-fonct">
+                        <span>Autant d'espace que vous voulez</span>
+                        <span>Support dédié</span>
+                    </div>
+                </div>
+                <a href="" class="show-all-fonc">Voir toutes les fonctionnalités</a>
+
+            </div>
+        </div>
+        <div class="faq">
+            <h1>Trouvez le plan qu'il vous faut</h1>
+            <span>Trouvez le plan idéal pour vos besoins et vos envies. Si vous augmentez de plan, vos donnés seront immediatement transferés</span>
+
+            <div class="question">
+                <h2 class="qst">Quel plan est le plus adapté pour moi ?</h2>
+                <span class="rep">Si vous utilisez moins de 15 Go de stockage, notre plan Gratuit est parfait. Pour une utilisation plus régulière avec jusqu'à 50 Go, le plan Essentiel est idéal. Si vous avez besoin de plus de stockage et de fonctionnalités avancées, le plan Pro à 200 Go sera le mieux adapté. Les entreprises peuvent opter pour notre plan Entreprise avec des options de stockage personnalisées et un support dédié.</span>
+            </div>
+            <div class="question">
+                <h2 class="qst">Est ce qu'un payement est necessaire pour le plan gratuit ?</h2>
+                <span class="rep">Non, le plan gratuit offre 15 Go de stockage sans frais. Aucun paiement n'est nécessaire pour ce plan.</span>
+            </div>
+            <div class="question">
+                <h2 class="qst">Est ce que le plan gratuit l'est à vie ?</h2>
+                <span class="rep">Oui, le plan gratuit est gratuit à vie, avec 15 Go de stockage. Cependant, des options payantes sont disponibles si vous avez besoin de plus de stockage ou de fonctionnalités avancées.</span>
+            </div>
+        </div>
+        <div class="plan-comparaison">
+            <table class="plan-comparaison-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th class="free-plan">
+                            <div>
+                                <span class="table-plan-name">Gratuit</span>
+                                <span class="table-plan-price">0€</span>
+                                <button class="table-plan-btn">
+                                    <i class="fa-solid fa-rocket"></i>
+                                    Aller à mon espace
+                                </button>
+                            </div>
+                        </th>
+                        <th class="essential-plan">
+                            <div>
+                                <span class="table-plan-name">Essentiel</span>
+                                <span class="table-plan-price">1.29€/mois</span>
+                                <button class="table-plan-btn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Acheter
+                                </button>
+                            </div>
+                        </th>
+                        <th class="pro-plan">
+                            <div>
+                                <span class="table-plan-name">Pro</span>
+                                <span class="table-plan-price">3.99/mois</span>
+                                <button class="table-plan-btn">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Acheter
+                                </button>
+                            </div>
+                        </th>
+                        <th class="entreprise-plan">
+                            <div>
+                                <span class="table-plan-name">Entreprise</span>
+                                <span class="table-plan-price">Selon le devis</span>
+                                <button class="table-plan-btn">
+                                    <i class="fa-solid fa-message"></i>
+                                    Nous contacter
+                                </button>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="separation">
+                        <td colspan="5">Fonctionnalités principales</td> <!-- 5 correspond au nombre de colonnes -->
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Espace de stockage</span>
+                        </td>
+                        <td class="free-plan">
+                            20 Go
+                        </td>
+                        <td class="essential-plan">
+                            50 Go
+                        </td>
+                        <td class="pro-plan">
+                            200 Go
+                        </td>
+                        <td class="entreprise-plan">
+                            Selon le devis
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Utilisateurs</span>
+                        </td>
+                        <td class="free-plan">
+                            Un utilisateur
+                        </td>
+                        <td class="essential-plan">
+                            Un utilisateur
+                        </td>
+                        <td class="pro-plan">
+                            Un utilisateur
+                        </td>
+                        <td class="entreprise-plan">
+                            Illimité
+                        </td>
+                    </tr>
+                    <tr class="separation">
+                        <td colspan="5">Protection contre les incidents</td> <!-- 5 correspond au nombre de colonnes -->
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Double sauvgarde</span>
+                        </td>
+                        <td class="free-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="essential-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Restauration de fichiers supprimés</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Peripherique de sauvgarde illimité</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            
+                        </td>
+                        <td class="pro-plan">
+                            
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="separation">
+                        <td colspan="5">Outils de collaboration</td> <!-- 5 correspond au nombre de colonnes -->
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Partage de fichier</span>
+                        </td>
+                        <td class="free-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="essential-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Gestion des droits</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Gestion d'utilisation</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Gestion d'expiration</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Protection des liens</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            
+                        </td>
+                        <td class="pro-plan">
+                            
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="separation">
+                        <td colspan="5">Securité</td> <!-- 5 correspond au nombre de colonnes -->
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Certificat SSL</span>
+                        </td>
+                        <td class="free-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="essential-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Accès via un token expirable à chaque deconnexion</span>
+                        </td>
+                        <td class="free-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="essential-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Accès avec la double authentification</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="pro-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Accès via un token expirable tout les x temps</span>
+                        </td>
+                        <td class="free-plan">
+                            
+                        </td>
+                        <td class="essential-plan">
+                            
+                        </td>
+                        <td class="pro-plan">
+                            
+                        </td>
+                        <td class="entreprise-plan">
+                            <i class="fa-solid fa-check"></i>
+                        </td>
+                    </tr>
+                    <tr class="separation">
+                        <td colspan="5">Assistance</td> <!-- 5 correspond au nombre de colonnes -->
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Assistance</span>
+                        </td>
+                        <td class="free-plan">
+                            Assistance standard
+                        </td>
+                        <td class="essential-plan">
+                            Assistance prioritaire
+                        </td>
+                        <td class="pro-plan">
+                            Assistance prioritaire
+                        </td>
+                        <td class="entreprise-plan">
+                            Assistance dédiée
+                        </td>
+                    </tr>
+                    <tr class="default-lignes">
+                        <td>
+                            <span>Ordre de priorité</span>
+                        </td>
+                        <td class="free-plan">
+                            4
+                        </td>
+                        <td class="essential-plan">
+                            3
+                        </td>
+                        <td class="pro-plan">
+                            2
+                        </td>
+                        <td class="entreprise-plan">
+                            1
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+    </div>
+    <script src="plan.js"></script>
+</body>
+</html>

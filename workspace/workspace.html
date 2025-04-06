@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace de travail</title>
+    <link rel="stylesheet" href="workspace.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="popup_other_action" id="popup-action">
+        <i class="fa-solid fa-circle-xmark" id="popup-action-close"></i>
+        <h2>Autres actions</h2>
+        <div>
+            <button id="share-link">Lien de partage</button>
+            <button class="cdqrdeshare" id="share-qrcode">
+                <i class="fa-solid fa-crown Essential"></i>
+                Code QR de partage
+            </button>
+        </div>
+    </div>
+    <div class="popup-qrcode" id="popup-qrcode">
+        <i class="fa-solid fa-circle-xmark" id="close-qrcode"></i>
+        <h2>Code QR de partage</h2>
+        <div class="waiting" id="waiting">
+            <i class="fa-solid fa-spinner"></i>
+            <span>Génération du code QR...</span>
+        </div>
+        <div class="codeqr" id="qrcode">
+            <img id="qrImage" src="">
+        </div>
+    </div>
+    <div class="popup-share" id="popup-share">
+        <i class="fa-solid fa-circle-xmark" id="close-share"></i>
+        <h2>Lien de partage</h2>
+        <div class="waiting" id="waiting-link">
+            <i class="fa-solid fa-spinner"></i>
+            <span>Génération du Lien...</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; background: none; margin-top: 10px;" id="link-div">
+            <input type="text" id="link" value="https://www.example.com" readonly class="input">
+            <button id="copy-link" class="copy-link">Copier le lien</button>
+        </div>
+    </div>
+    <div class="head droite">
+        <a href="../index.html">
+            <i class="fa-solid fa-reply"></i>
+            Retour
+        </a>
+    </div>
+    <div class="head gauche">
+        <a href="../settings/settings.html">
+            <i class="fa-solid fa-gear"></i>
+            Parametres
+        </a>
+    </div>
+    <div class="input-import" id="popup_import" style="display: none;">
+        <button id="close">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+        
+        <h2>Mettez vos fichiers ici</h2>
+        <input type="file" id="files">
+        <div class="send-div">
+            <button id="import_file_send">Envoyer</button>
+        </div>
+    </div>
+    <div class="main-band">
+        <h1>Bienvenue sur votre espace !</h1>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text">
+        </div>
+    </div>
+    <div class="file-explorer">
+        <div class="table-file-explorer">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Taille</th>
+                    </tr>
+                </thead>
+                <tbody  id="table">
+                    <tr>
+                        <td class="name">
+                            <div class="name-display">
+                                <div>
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </div>
+                                <div class="file_name">
+                                    <span>CV 2025</span>
+                                </div>
+                            </div>
+                                
+                        </td>
+                        <td class="taille">
+                            <div>
+                                2.6 Go
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-bars"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="name">
+                            <div class="name-display">
+                                <div>
+                                    <i class="fa-solid fa-file-pdf"></i>
+                                </div>
+                                <div>
+                                    CV 2025
+                                </div>
+                            </div>
+                                
+                        </td>
+                        <td class="taille">
+                            <div>
+                                2.6 Go
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-download"></i>
+                                <i class="fa-solid fa-trash"></i>
+                                <i class="fa-solid fa-file-signature"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="my-space">
+            <h2>Mon espace :</h2>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress_bar"></div>
+            </div>
+            <span id="progress_bar_info">7.5 Go de libre / 15 Go</span>
+        </div>
+        <div class="import">
+            <button id="import_file">Importer</button>
+        </div>
+        <div class="my-plan">
+            <h2 style="background: none; color: white;">Mon plan :</h2>
+            <div class="plan-name">
+                <i class="fa-solid fa-crown" id="plan_crow" style="color: yellow; background: none;"></i>
+                <h3 style="background: none; color: white;" id="plan">
+                    Gratuit
+                </h3>
+            </div>
+        </div>
+        
+    </div>
+    <script src="workspace.js"></script>
+    <script src="features.js"></script>
+</body>
+</html>

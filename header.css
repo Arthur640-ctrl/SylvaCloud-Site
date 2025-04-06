@@ -1,0 +1,213 @@
+header {
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    display: flex;
+    background: white;
+    border-bottom: 2px solid rgb(223, 223, 223);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+    color: black;
+}
+
+.navigation a {
+    background: none;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 500;
+    position: relative; /* Ajouté pour le positionnement du ::after */
+    color: black;
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #73A86E;
+}
+
+.left {
+    margin-right: auto; /* Pousse à gauche */
+}
+
+.right {
+    margin-left: auto; /* Pousse à droite */
+}
+
+.fa-bars {
+    background: none;
+    color: black;
+    font-size: x-large;
+    margin: 10px;
+    display: none !important;
+    transition: .3s;
+}
+
+.fa-bars:hover {
+    color: #73A86E;
+}
+
+.fa-circle-user {
+    color: white;
+    background: none;
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.fa-circle-user:hover {
+    color: #73A86E;
+}
+
+.dropdown-menu {
+    display: none; /* Le menu est caché par défaut */
+    position: absolute;
+    top: 48px; /* Place le menu directement sous l'icône */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    background: none;
+}
+
+.responsive-dropdown-menu {
+    display: none; /* Le menu est caché par défaut */
+    position: absolute;
+    top: 48px; /* Place le menu directement sous l'icône */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.responsive-header-container i {
+    background: none;
+}
+
+.responsive-header-container {
+    background: none;
+}
+
+.responsive-header-container:hover .responsive-dropdown-menu {
+    display: block;
+}
+
+.responsive-dropdown-menu li {
+    padding: 10px;
+    transition: .5s;
+}
+
+.responsive-dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: .5s;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    transition: .5s;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: .5s;
+}
+
+.menu-container:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu-settings:hover {
+    background-color: #73A86E;
+}
+
+.dropdown-menu-settings:hover a {
+    background-color: #73A86E;
+    color: white;
+}
+
+.dropdown-menu-logout:hover {
+    background-color: #ff0000;
+}
+
+.dropdown-menu-logout:hover a {
+    background-color: #ff0000;
+    color: white;
+}
+
+.account-type {
+    display: flex;
+    background: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.account-type i {
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .header-menu {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block !important;
+        color: white;
+    }
+
+    .responsive-header-container {
+        display: block;
+    }
+
+    .navigation {
+        display: none !important;
+    }
+
+    header h2 {
+        font-size: medium;
+    }
+
+    header {
+        height: 35px;
+    }
+
+    .account-type {
+        display: none;
+    }
+
+}

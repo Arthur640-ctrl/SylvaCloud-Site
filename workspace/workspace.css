@@ -1,0 +1,721 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+* {
+    background-color: rgb(201, 201, 201);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;    
+    color: black;
+}
+
+.main-band {
+    margin-top: 10vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-band h1 {
+    font-size: 60px;
+    color: #558f4f;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+    height: 30px;
+    width: 600px;
+    background-color: #558f4f;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.05);
+    margin: 20px;
+}
+
+.fa-magnifying-glass {
+    background: none;
+    color: white;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.search input {
+    height: 30px;
+    width: 100%;
+    color: white;
+    background: none;
+    border: none;
+    line-height: 40px; /* Alignement vertical */
+    text-align: center; /* Alignement horizontal (optionnel) */
+}
+
+.search input::placeholder {
+    color: white;
+    font-size: large;
+    margin-bottom: 0;
+}
+
+.search input:focus, .search input:active {
+    outline: none;
+    user-select: none; /* Empêche la sélection */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #558f4f; /* Couleur de fond */
+    color: white;
+    text-align: center;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.my-space {
+    margin-top: 7px;
+    margin-bottom: 10px;
+    height: auto;
+    width: 10%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-space h2 {
+    background: none;
+    color: white;
+}
+
+.progress-container {
+    height: 10px;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.progress-bar {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    border-radius: 20px;
+    
+}
+
+.my-space span {
+    margin-top: 5px;
+    background: none;
+    color: white;
+}
+
+.table-file-explorer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    table-layout: fixed; /* Fixe la largeur des cellules */
+    width: 80%;
+    border-collapse: collapse; /* Supprime les espaces entre les bordures */
+    border-radius: 20px;
+    color: #558f4f;
+}
+
+th {
+    color: #558f4f;         /* Texte en vert */
+    text-align: left;     /* Aligné à gauche */
+    padding: 10px;        /* Espacement */
+    border-bottom: 2px solid #558f4f; /* Ligne en bas uniquement */
+    font-size: 20px;
+}
+
+td {
+    padding: 10px;
+    color: #558f4f;
+    font-size: 20px;
+    border-bottom: 2px solid #558f4f; /* Ligne en bas uniquement */
+    
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    background: none;  /* Pour éviter que le fond devienne transparent quand tu fais défiler */
+    z-index: 1;  /* S'assure que le header reste au-dessus du reste du tableau */
+    border-bottom: 2px solid #558f4f; /* Ligne en bas uniquement */
+}
+
+.taille i{
+    color: #558f4f;
+    cursor: pointer;
+    
+}
+
+.taille {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.name-display {
+    display: flex;
+    flex-direction: row;
+    color: #558f4f;
+}
+
+.name-display div {
+    color: #558f4f;
+}
+
+.name i {
+    color: #558f4f;
+    margin-right: 10px;
+}
+
+.taille div {
+    color: #558f4f;
+}
+
+.file-explorer {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: flex-start; /* Aligne tout à gauche */
+    width: 100%;
+    max-height: 62vh;  /* Ajuste la hauteur maximale selon tes besoins */
+    overflow-y: auto;   /* Affiche la barre de défilement verticale si nécessaire */
+}
+
+.more {
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #558f4f;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    transition: .2s;
+    border: 2px solid #558f4f;
+    margin-top: 10px; /* Ajoute un petit espace avec le tableau */
+    align-self: flex-start; /* Force le bouton à rester à gauche */
+    margin-left: 168.5vh;
+}
+
+.more i {
+    background: none;
+    transition: .2s;
+}
+
+.more:hover {
+    background: none;
+    border: 2px solid #558f4f;
+    color: #558f4f;
+}
+
+.more:hover i {
+    color: #558f4f;
+}
+
+.import {
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.import button {
+    padding: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: medium;
+    border: 2px solid white;
+    background-color: #558f4f;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.import button:hover {
+    background-color: white;
+    color: #558f4f;
+}
+
+.input-import {
+    position: fixed; /* Permet de la fixer sur l'écran */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste la position pour que le centre de la div soit exactement au centre de l'écran */
+    background-color: #558f4f; /* Fond blanc */
+    padding: 20px; /* Espacement autour du contenu */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère pour le style */
+    z-index: 1000; /* Pour s'assurer qu'elle apparaisse par-dessus d'autres éléments */
+}
+
+.input-import i {
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.input-import h2 {
+    background: none;
+    color: white;
+}
+
+.input-import input {
+    margin-top: 10px;
+    background: none;
+}
+
+.input-import button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.send-div {
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+.send-div button {
+    border: 2px solid white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    color: #558f4f;
+    background-color: white;
+}
+
+.delete-file {
+    color: #558f4f;
+    transition: .5s;
+}
+
+.delete-file:hover {
+    color: red;
+    transform: scale(1.05);
+}
+
+.download-file {
+    color: #558f4f;
+    transition: .5s;
+}
+
+.download-file:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+.head {
+    position: absolute;
+    background: none;
+}
+
+.droite {
+    top: 5px;
+    left: 5px;
+}
+
+.gauche {
+    top: 5px;
+    right: 5px;
+}
+
+.droite a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    color: #558f4f;
+}
+
+.droite a i {
+    transition: .5s;
+    color: #558f4f;
+}
+
+.droite a:hover {
+    color: black;
+}
+
+.droite a:hover i {
+    transition: .5s;
+    color: black;
+}
+
+.gauche a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    color: #558f4f;
+}
+
+.gauche a i {
+    transition: .5s;
+    color: #558f4f;
+}
+
+.gauche a:hover {
+    color: black;
+}
+
+.gauche a:hover i {
+    transition: .5s;
+    color: black;
+}
+
+.my-plan {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.my-plan div {
+    background: none;
+}
+
+.plan-name {
+    background: none;
+    display: flex;
+}
+
+.fa-crown {
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.my-space {
+    width: auto;
+}
+
+
+
+@media screen and (max-width: 1567px) {
+    .footer {
+        height: 70px;
+    }
+
+    .my-space h2 {
+        font-size: 20px;
+    }
+
+    .my-space span {
+        font-size: 12px;
+    }
+
+    .my-space {
+        margin-right: 20px;
+    }
+
+    .my-plan h2 {
+        font-size: 20px;
+    }
+
+    .plan-name h3 {
+        font-size: 12px;
+    }
+
+} 
+
+
+
+@media screen and (max-width: 975px) {
+    .progress-container {
+        display: none;
+    }
+
+    #import_file {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main-band h1 {
+        font-size: 30px;
+    }
+
+    .search {
+        width: 30%;
+        height: 15px;
+    }
+
+    .search i {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .main-band {
+        text-align: center;
+    }
+
+    .search {
+        width: 50%;
+    }
+
+    .my-plan h2 {
+        font-size: 20px;
+    }
+
+    .plan-name h3 {
+        font-size: 12px;
+    }
+
+    .my-plan {
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 870px) {
+    .file_name span {
+        font-size: 15px;
+    } 
+
+    table {
+        width: 95%;
+    }
+
+    .file_taille span {
+        font-size: 15px;
+    }
+
+    .name-display {
+        white-space: nowrap;      /* Empêche le retour à la ligne */
+        text-overflow: hide;  /* Ajoute "..." quand le texte dépasse */
+        max-width: 20px; 
+    }
+    
+}
+
+tr:hover {
+    background-color: aqua;
+}
+
+.fa-bars {
+    transition: .5s;
+}
+
+.fa-bars:hover {
+    color: black;
+}
+
+.popup_other_action {
+    width: auto;
+    height: auto;
+    background: #558f4f;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 10000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.popup_other_action div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    width: 100%;
+}
+
+.popup_other_action h2 {
+    background: none;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+.popup_other_action div button {
+    padding: 5px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #558f4f;
+    cursor: pointer;
+    transition: .5s;
+    width: 90%;
+}
+
+.popup_other_action div button:hover {
+    background-color: white;
+    color: #558f4f;
+    width: 100%;
+}
+
+.fa-circle-xmark {
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cdqrdeshare i {
+    color: rgb(255, 255, 255); 
+    background: none; 
+    transition: .5s;
+}
+
+.cdqrdeshare:hover i {
+    color: #558f4f;
+}
+
+.popup-qrcode {
+    width: auto;
+    height: auto;
+    background: #558f4f;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 10000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.popup-qrcode h2 {
+    background: none;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+.waiting i {
+    background: none;
+    color: white;
+    animation: spin 3s linear infinite;
+}
+
+.waiting {
+    background: none;
+    color: white;
+    text-align: center;
+}
+
+.waiting span {
+    background: none;
+    color: white;
+}
+
+#qrcode img {
+    max-width: 100%;  /* Limite la largeur de l'image à 100% de la largeur de son parent */
+    height: auto;     /* Garde les proportions de l'image */
+}
+
+.codeqr {
+    background: none;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .popup-qrcode h2 {
+        font-size: 15px;
+    }
+}
+
+.popup-share {
+    width: auto;
+    height: auto;
+    background: #558f4f;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 10000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.popup-share h2 {
+    background: none;
+    color: white;
+    margin: 5px;
+    text-align: center;
+}
+
+.input {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 30px;
+    color: black;
+    text-align: center;
+    width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.input::placeholder {
+    color: black;
+    text-align: center;
+}
+
+.input:focus, .input:active {
+    outline: none;
+    user-select: none; /* Empêche la sélection */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.copy-link {
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 7px;
+    background: #558f4f;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.copy-link:hover {
+    background: white;
+    color: #558f4f;
+}

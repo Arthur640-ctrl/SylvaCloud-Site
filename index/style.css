@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
+* {
+    background-color: rgb(201, 201, 201);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;    
+    color: black;
+}
+
+header {
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: none;
+    color: white;
+}
+
+.navigation a {
+    background: none;
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 500;
+    position: relative; /* Ajouté pour le positionnement du ::after */
+    color: rgb(255, 255, 255);
+    transition: .3s;
+}
+
+.navigation a:hover {
+    color: #73A86E;
+}
+
+.left {
+    margin-right: auto; /* Pousse à gauche */
+}
+
+.right {
+    margin-left: auto; /* Pousse à droite */
+}
+
+.fa-bars {
+    background: none;
+    color: black;
+    font-size: x-large;
+    margin: 10px;
+    display: none !important;
+    transition: .3s;
+}
+
+.fa-bars:hover {
+    color: #73A86E;
+}
+
+.container {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-band {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 72px;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #000000;
+    padding-bottom: 50px;
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Enlève les marges par défaut */
+    padding: 0; /* Enlève les paddings par défaut */
+}
+
+.container, .main-band {
+    width: 100%;
+    max-width: none; /* Supprime toute limite de largeur */
+}
+
+
+.main-band h1 {
+    font-size: 48px;
+    padding-top: 17vh;
+}
+
+.start-for-free-btn {
+    background-color: whitesmoke;
+    padding: 24px;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.start-for-free-btn:hover {
+    background-color: #73A86E;
+}
+
+.start-for-free-btn:hover .start-for-free-btn-arrow {
+    transform: translateX(5px); /* Déplace la flèche vers la droite */
+}
+
+.main-band-button {
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.start-for-free {
+    background: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.start-for-free p {
+    margin-top: 10px;
+    color: gray;
+}
+
+.choice-your-plan {
+    background: none;
+}
+
+.choice-your-plan-btn {
+    background: none;
+    color: white;
+    padding: 24px;
+    margin-top: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.choice-your-plan-btn:hover {
+    color: #73A86E;
+}
+
+.choice-your-plan-btn:hover .choice-your-plan-btn-arrow {
+    transform: translateX(5px); /* Déplace la flèche vers la droite */
+    color: #73A86E;
+}
+
+.main-band p {
+    font-size: 20px;
+}
+
+
+.start-for-free p {
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.start-for-free-btn-arrow {
+    background: none;
+    color: black;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+.fa-circle-question {
+    background: none;
+    color: grey;
+}
+
+.choice-your-plan-btn-arrow {
+    background: none;
+    color: white;
+    margin-left: 5px;
+    transition: .5s;
+}
+
+.band-image {
+    width: 100%;
+    height: 5000px;
+    background-color: red;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+
+}
+
+.security-step h2 {
+    text-decoration: wavy;
+    background: none;
+}
+
+.security-step p{
+    margin-left: 10px;
+    background: none;
+}
+
+.conclusion {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.band-text-security-presentation {
+    margin: 100px;
+    margin-top: 130px;
+    margin-bottom: 120px;
+}
+
+.band-text-security-presentation h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.security-step:hover {
+    background-color: #73A86E;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: scale(1.05);
+}
+
+.security-step:hover h2 {
+    color: white;
+}
+
+.security-step:hover p {
+    color: white;
+}
+
+.security-step h2 {
+    transition: .5s;
+}
+
+.security-step p {
+    transition: .5s;
+}
+
+.security-step {
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.ecology-step {
+    background-color: #73A86E !important;
+    width: 60%;
+    height: auto;
+    display: flex;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .5s;
+    margin: 30px;
+}
+
+.ecology-step:hover .text-zone {
+    background-color: #73A86E;
+    color: white;
+}
+
+.ecology-step:hover {
+    transform: scale(1.05);
+}
+
+.ecology-step:hover p {
+    color: white;
+}
+
+.ecology-step:hover h2 {
+    color: white;
+}
+
+.ecology-step p {
+    color: black;
+    transition: .5s;
+}
+
+.ecology-step h2 {
+    color: black;
+    transition: .5s;
+}
+
+.band-text-ecology-presentation {
+    height: 65vh;
+    width: 100%;
+    background-color: none;
+}
+
+
+.col1 {
+    width: 40%;
+    height: 25vh;
+}
+
+.col2 {
+    width: 40%;
+    height: 25vh;
+}
+
+.text-zone {
+    background: none;
+    color: #000000;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .5s;
+    
+}
+
+.img-zone img {
+    width: 100%;      /* Adapte la largeur de l'image à celle du div */
+    height: 100%;     /* Adapte la hauteur de l'image à celle du div */
+    object-fit: cover; /* Remplie le div sans déformation, en coupant l'image si nécessaire */
+    border-top-right-radius: 20px;  /* Arrondi en haut à droite */
+    border-bottom-right-radius: 20px;  /* Arrondi en bas à droite */
+}
+
+.img-zone {
+    width: 50%;
+    height: 100%;
+    background: none;
+    display: none;
+}
+
+.band-text-ecology-presentation-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.band-text-ecology-presentation h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #73A86E;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+}
+
+footer p {
+    color: black;
+    text-align: center;
+}
+
+.fa-circle-user {
+    color: white;
+    background: none;
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.fa-circle-user:hover {
+    color: #73A86E;
+}
+
+.dropdown-menu {
+    display: none; /* Le menu est caché par défaut */
+    position: absolute;
+    top: 48px; /* Place le menu directement sous l'icône */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    background: none;
+}
+
+.responsive-dropdown-menu {
+    display: none; /* Le menu est caché par défaut */
+    position: absolute;
+    top: 48px; /* Place le menu directement sous l'icône */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.responsive-header-container i {
+    background: none;
+}
+
+.responsive-header-container {
+    background: none;
+}
+
+.responsive-header-container:hover .responsive-dropdown-menu {
+    display: block;
+}
+
+.responsive-dropdown-menu li {
+    padding: 10px;
+    transition: .5s;
+}
+
+.responsive-dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: .5s;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    transition: .5s;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    transition: .5s;
+}
+
+.menu-container:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu:hover {
+    display: block;
+}
+
+.dropdown-menu-settings:hover {
+    background-color: #73A86E;
+}
+
+.dropdown-menu-settings:hover a {
+    background-color: #73A86E;
+    color: white;
+}
+
+.dropdown-menu-logout:hover {
+    background-color: #ff0000;
+}
+
+.dropdown-menu-logout:hover a {
+    background-color: #ff0000;
+    color: white;
+}
+
+.account-type {
+    display: flex;
+    background: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.account-type i {
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main-band h1 {
+        font-size: larger;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-band p {
+        font-size: small;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header-menu {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block !important;
+        color: white;
+    }
+
+    .responsive-header-container {
+        display: block;
+    }
+
+    .navigation {
+        display: none !important;
+    }
+
+    header h2 {
+        font-size: medium;
+    }
+
+    header {
+        height: 35px;
+    }
+
+    .main-band-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-band {
+        height: auto;
+        width: 100%;
+        
+    }
+
+    html {
+        width: 102.7%;
+    }
+
+    .ecology-step {
+       width: 90%;
+    
+    }
+    
+    .band-text-security-presentation {
+        width: 90%; 
+    }
+
+    .account-type {
+        display: none;
+    }
+
+}
+
+.back {
+    background: none;
+    color: white;
+    cursor: pointer;
+}

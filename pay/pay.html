@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payement</title>
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Payement pour le plan Essentiel</h1>
+        <div class="method">
+            <div class="with-code method-option">
+                <input type="radio">
+                <span>J'ai un code</span>
+            </div>
+            <div class="without-code method-option">
+                <input type="radio">
+                <span>Je n'ai pas de code</span>
+            </div>
+        </div>
+        <div class="option-code">
+            <input type="text" placeholder="Mettez le code ici" class="input" id="code-input">
+        </div>
+        <div class="option-without-code">
+            <h3>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                Indisponible
+            </h3>
+        </div>
+        <div style="background: none; margin-top: 10px;" id="error" class="error">
+            <i class="fa-solid fa-triangle-exclamation" style="background: none; color: red; display: block; margin-right: 5px;"></i>
+            <span style="background: none; color: red;" id="error-msg">
+                Une erreur est survenue
+            </span>
+        </div>
+        <button id="command" class="command">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Valider la commande
+        </button>
+    </div>
+    <script src="pay.js"></script>
+</body>
+</html>

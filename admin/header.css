@@ -1,0 +1,58 @@
+* {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    display: flex;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    height: 70px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 500;
+    position: relative; /* Ajouté pour le positionnement du ::after */
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    bottom: -6px;
+    left: 0;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.navigation a:hover::after {
+    width: 100%; /* Prise en compte de toute la largeur du lien */
+    transform: scaleX(1);
+}
