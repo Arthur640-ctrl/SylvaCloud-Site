@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
-
 * {
     background-color: rgb(201, 201, 201);
     margin: 0;
@@ -296,8 +295,14 @@ thead {
     padding: 10px;
     margin: 20px;
     border-radius: 10px;
-    color: #558f4f;
+    color: white;
+    background-color: #558f4f;
+    transition: .5s;
+}
+
+.send-div button:hover {
     background-color: white;
+    color: #558f4f;
 }
 
 .delete-file {
@@ -718,4 +723,37 @@ tr:hover {
 .copy-link:hover {
     background: white;
     color: #558f4f;
+}
+
+.change-plan {
+    background: none;
+    color: rgb(65, 65, 65);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.change-plan i {
+    background: none;
+    color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+#files::file-selector-button {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: #558f4f;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#files::file-selector-button:hover {
+    padding: 10px;
+    border: 2px solid white;
+    background-color: white;
+    color: #558f4f;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
 }

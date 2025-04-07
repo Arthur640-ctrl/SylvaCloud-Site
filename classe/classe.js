@@ -23,10 +23,6 @@ if (storedToken && storedEmail) {
 
     is_connect = true
 
-    start_btn.innerHTML = `
-    Aller à mon espace
-    <i class="fa-solid fa-arrow-right start-for-free-btn-arrow"></i>
-    `
     a_my_space.style.display = "block"
 
 } else {

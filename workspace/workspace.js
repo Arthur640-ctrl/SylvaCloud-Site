@@ -187,6 +187,8 @@ function getIcon(extension) {
     }
 }
 
+var content = ""
+
 fetch(api + "/get_content", {
     method: "POST",
     headers: {
@@ -196,6 +198,7 @@ fetch(api + "/get_content", {
 })
     .then(response => response.json())
     .then(response => {
+        content = response
         console.log(response)
         load_files(response)
     })
@@ -294,4 +297,21 @@ if (storedEmail && storedToken) {
     window.location.href = "../index.html"
 }
 
+const search = document.getElementById("search")
+
+search.addEventListener("input", function() {
+    if (search.value == "") {
+        load_files(content)
+    } else {
+        const filteredFilesName = content.filter(file => {
+            return file.nom.toLowerCase().includes(search.value.toLowerCase())
+        })
+        const filteredFilesExtension = content.filter(file => {
+            return file.extension.toLowerCase().includes(search.value.toLowerCase())
+        })
+        const filteredFiles = [...new Set([...filteredFilesName, ...filteredFilesExtension])]
+        
+        load_files(filteredFiles)
+    }
+})
 

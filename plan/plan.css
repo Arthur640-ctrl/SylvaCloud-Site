@@ -196,20 +196,6 @@ header {
     transform: scale(1.05);
 }
 
-.plan-fonctionnalite {
-    display: flex;
-}
-
-.plan-fonctionnalite-icon {
-    display: flex;
-    flex-direction: column;
-}
-
-.plan-fonctionnalite-fonct {
-    display: flex;
-    flex-direction: column;
-}
-
 .plan h3 {
     background: none;
     color: #524A3ED1;
@@ -305,11 +291,6 @@ header {
 .plan-fonctionnalite-fonct span {
     margin-bottom: 17px;
     margin-left: 10px;
-    background: none;
-}
-
-.show-all-fonc {
-    text-align: center;
     background: none;
 }
 
@@ -742,3 +723,44 @@ thead {
     color: black;
     cursor: pointer;
 }
+
+.plan-fonctionnalite {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ligne-fonctionnalite {
+    display: flex;
+    align-items: center;
+    color: white;
+    background: none;
+}
+
+.ligne-fonctionnalite i {
+    width: 25px; /* 👈 largeur fixe pour les icônes */
+    text-align: center; /* centre l’icône dans son bloc */
+    font-size: 18px;
+    background: none;
+}
+
+.ligne-fonctionnalite span {
+    margin-left: 10px; /* espace entre l’icône et le texte */
+    font-size: 16px;
+    color: black;
+    background: none;
+}
+
+.show-all-fonc {
+    padding-top: 15px;
+    margin-top: auto; /* pousse ce lien vers le bas */
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+    background: none;
+}
+
+
+
+

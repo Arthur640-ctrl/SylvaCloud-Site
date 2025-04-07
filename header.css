@@ -60,7 +60,7 @@ header {
 }
 
 .fa-circle-user {
-    color: white;
+    color: black;
     background: none;
     font-size: 25px;
     margin-right: 10px;
@@ -176,7 +176,8 @@ header {
 }
 
 .account-type i {
-    margin-right: 5px;
+    color: black;
+    margin-right: 0px;
     margin-top: 2px;
 }
 

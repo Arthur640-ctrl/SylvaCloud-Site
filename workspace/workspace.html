@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <div class="input-import" id="popup_import" style="display: none;">
+        <button id="close">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+        <h2>Mettez vos fichiers ici</h2>
+        <input type="file" id="files" multiple>
+        <div class="send-div">
+            <button id="import_file_send">Envoyer</button>
+        </div>
+    </div>
     <div class="popup_other_action" id="popup-action">
         <i class="fa-solid fa-circle-xmark" id="popup-action-close"></i>
         <h2>Autres actions</h2>
@@ -55,22 +65,11 @@
             Parametres
         </a>
     </div>
-    <div class="input-import" id="popup_import" style="display: none;">
-        <button id="close">
-            <i class="fa-solid fa-circle-xmark"></i>
-        </button>
-        
-        <h2>Mettez vos fichiers ici</h2>
-        <input type="file" id="files">
-        <div class="send-div">
-            <button id="import_file_send">Envoyer</button>
-        </div>
-    </div>
     <div class="main-band">
         <h1>Bienvenue sur votre espace !</h1>
         <div class="search">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text">
+            <input type="text" id="search">
         </div>
     </div>
     <div class="file-explorer">
@@ -153,6 +152,10 @@
                     Gratuit
                 </h3>
             </div>
+            <span class="change-plan" onclick="window.location.href='/plan/plan.html'">
+                <i class="fa-solid fa-circle-question"></i>
+                Changer
+            </span>
         </div>
         
     </div>
